@@ -4,24 +4,27 @@ public class Animals {
     private String color;
     private int maxLifespan;
     private String foodType;
-    private  int number=0;
+    private int number = 0;
 
-    public Animals(int number,String color, int maxLifespan, String foodType) {
+    public Animals(String color, int maxLifespan, String foodType) {
         this.color = color;
         this.maxLifespan = maxLifespan;
         this.foodType = foodType;
-        this.number=number;
+
     }
-    public String sing(){
-        String str3 =" издает звук ";
+
+    public String sing() {
+        String str3 = " издает звук ";
         return str3;
     }
-    public String play(){
-        String str1=" играет";
-return str1;
+
+    public String play() {
+        String str1 = " играет";
+        return str1;
     }
-    public String toString(){
-        String str2="; Окрас: "+color+"; Макс. продолжительсность жизни: "+maxLifespan+"; Тип еды: "+foodType;
+
+    public String toString() {
+        String str2 = "; Окрас: " + color + "; Макс. продолжительсность жизни: " + maxLifespan + "; Тип еды: " + foodType;
         return str2;
     }
 

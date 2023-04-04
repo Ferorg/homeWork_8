@@ -1,43 +1,59 @@
 package by.pvt.homework;
 
 public class AnimalsList {
+    private static int indexAddDogs;
+    private static int indexAddBirds;
+    private static int indexAddLions;
 
-    private static int kollWaitingAnimals;
-    private static int number;
-
-    public static int getNumber() {
-        return number;
+    public static Dogs[] createAnArrayOfDogs() {
+        Dogs[] massDogs = new Dogs[5];
+        massDogs[0] = new Dogs("Шарик", "Дворняга", 11, "чЕрный", 14, "Мясо");
+        massDogs[1] = new Dogs("Биба", "Корги", 10, "Рыжий", 22, "Мясо");
+        massDogs[2] = new Dogs("DD", "Хаски", 12, "Белый", 12, "Мясо");
+        massDogs[3] = new Dogs("Джек", "Дворняга", 25, "Белый", 12, "Мясо");
+        massDogs[4] = new Dogs("Барсик", "Хаски", 15, "Белый", 12, "Мясо");
+        return massDogs;
     }
 
-    public static void setNumber(int number) {
-        AnimalsList.number = number;
+    public static Birds[] createAnArrayOfBirds() {
+        Birds[] massBirds = new Birds[5];
+        massBirds[0] = new Birds("Стриж", 8, "Черный", 5, "Насекомые");
+        massBirds[1] = new Birds("Орел", 9, "Черный", 15, "мясо");
+        massBirds[2] = new Birds("Воробей", 6, "Белый", 6, "Насекомые");
+        return massBirds;
     }
 
-    public static int getKollWaitingAnimals() {
-        return kollWaitingAnimals;
+    public static Lions[] createAnArrayOfLions() {
+        Lions[] massLions = new Lions[5];
+        massLions[0] = new Lions("Джек", "красный", 10, "Мясо");
+        massLions[1] = new Lions("Тимон", "белый", 11, "Мясо");
+        massLions[2] = new Lions("Пумба", "бурый", 12, "Мясо");
+        massLions[3] = new Lions("Сидни", "черный", 22, "Мясо");
+        return massLions;
     }
 
-    public static void setKollWaitingAnimals(int kollWaitingAnimals) {
-        AnimalsList.kollWaitingAnimals = kollWaitingAnimals;
+    public int getIndexAddDogs() {
+        return indexAddDogs;
     }
 
-    public static Animals[] waitingList(){
-    Animals[] animalsList=new Animals[11];
-    animalsList[0]=new Lions(1,"Джек", "красный",10,"Мясо");
-    animalsList[1]=new Dogs(4,"DD","Хаски",12,"Белый",12,"Мясо");
-    animalsList[2]=new Lions(2,"Тимон", "белый",11,"Мясо");
-    animalsList[3]=new Birds(9,"Стриж",12,"Белый",5,"насекомые");
-    animalsList[4]=new Lions(3,"Пумба", "бурый",12,"Мясо");
-    animalsList[5]=new Dogs(5,"Джек","Дворняга",25,"Белый",12,"Мясо");
-    animalsList[6]=new Birds(9,"Стриж",12,"Белый",5,"насекомые");
-    animalsList[7]=new Dogs(6,"CC","Хаски",26,"Белый",12,"Мясо");
-    animalsList[8]=new Dogs(7,"JJ","Хаски",24,"Белый",12,"Мясо");
-    animalsList[9]=new Dogs(8,"CC","Хаски",14,"Белый",12,"Мясо");
-    animalsList[10]=new Birds(9,"Стриж",12,"Белый",5,"насекомые");
+    public void setIndexAddDogs(int indexAddDogs) {
+        this.indexAddDogs = indexAddDogs;
+    }
 
-    kollWaitingAnimals=11;
-    return animalsList;
+    public int getIndexAddBirds() {
+        return indexAddBirds;
+    }
 
-}
+    public void setIndexAddBirds(int indexAddBirds) {
+        this.indexAddBirds = indexAddBirds;
+    }
+
+    public int getIndexAddLions() {
+        return indexAddLions;
+    }
+
+    public void setIndexAddLions(int indexAddLions) {
+        this.indexAddLions = indexAddLions;
+    }
 }
 
